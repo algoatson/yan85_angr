@@ -1,10 +1,7 @@
 from angr.simos import SimOS, register_simos
 from angr.sim_procedure import SimProcedure
-from angr.calling_conventions import SimStackArg, SimRegArg, register_syscall_cc, register_default_cc, SimCC
+from angr.calling_conventions import SimStackArg, SimRegArg, register_syscall_cc, register_default_cc, SimCCUnknown
 from yan85_arch import Yan85
-
-class SimCCYan85(SimCC):
-    ARG_REGS = [ ]
 
 class SimYan85(SimOS):
     SYSCALL_TABLE = {}
@@ -24,4 +21,4 @@ class SimYan85(SimOS):
         return state
 
 register_simos('Testing', SimYan85)
-register_default_cc('Yan85', SimCCYan85)
+register_default_cc('Yan85', SimCCUnknown)
