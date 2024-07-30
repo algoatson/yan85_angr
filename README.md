@@ -7,4 +7,4 @@ Given that angr's steep learning curve can be daunting, this repository provides
 
 I would highly recommend the following additional resources:
 
-    - [Angr Lifter Tutorial](https://github.com/angr/angr-platforms/blob/master/tutorial/4_lifter.md)
+- [Angr Lifter Tutorial](https://github.com/angr/angr-platforms/blob/master/tutorial/4_lifter.md)
