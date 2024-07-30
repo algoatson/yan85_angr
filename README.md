@@ -6,4 +6,5 @@ I have chosen to keep the full project—encompassing comprehensive definitions 
 Given that angr's steep learning curve can be daunting, this repository provides a structured example to guide you in organizing your own project.
 
 I would highly recommend the following additional resources:
+
     - [Angr Lifter Tutorial](https://github.com/angr/angr-platforms/blob/master/tutorial/4_lifter.md)
