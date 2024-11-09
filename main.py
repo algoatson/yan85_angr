@@ -14,7 +14,8 @@ if __name__.__eq__("__main__"):
 
     bytecode = bts
 
-    arch = archinfo.arch_from_id('yan85')
-    irsb = pyvex.IRSB(bytecode, 0, arch)
+    lifter = Yan85Lifter(archinfo.arch_from_id('yan85'), 0)
+    lifter.lift(data=bytecode)
+    #irsb = pyvex.IRSB(bytecode, 0, arch)
 
-    print(irsb)
+    print(lifter.irsb.pp())

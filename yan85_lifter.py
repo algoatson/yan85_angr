@@ -31,7 +31,7 @@ class Yan85Instruction(Instruction):
 
     """
     static method, which means we can call it outside of the class.
-    this computers our bin_format for each of our instructions, it is
+    this computes our bin_format for each of our instructions, it is
     a somewhat generic function.
     """
     @staticmethod
